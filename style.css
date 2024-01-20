@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Rubik+Burned&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary-black: #000000;
+    --primary-white: white;
+    --primary-gray: #F5F5F5;
+    --primary-blue: #C2E5FD;
+    --header-size: 12vh;
+    --hero-size: 60vh;
+}
+.main-container{
+    background: var(--primary-gray);
+    min-height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    max-width: 1450px;
+    margin: auto;
+    padding: 0 2rem;
+}
+header{
+    height: var(--header-size)
+}
+.navbar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list{
+    display: flex;           
+    gap:2rem
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.navlinks{
+    font-size: 1rem;
+    color: var(--primary-black)
+}
+.nav-btn{
+    background: var(--primary-black);
+    color: var(--primary-white);
+    padding: .7rem 1.1rem;
+    border-radius: .5rem;
+}
+.nav-btn:hover{
+    background: blue;
+    color: black;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+.hero-section{
+   
+    height: var(--hero-size);
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+}
+
+
+h1{
+    font-family: 'ADLaM Display', system-ui;
+    font-size: 2.8rem;
+    margin: .4rem;
+}  
+.profile-container{
+   width: 19rem;
+    aspect-ratio: 1;
+   
+    border-radius: 50%;
+    border: .2rem solid var(--primary-black)
+  
+} 
+.fa-brands{
+    color: var(--primary-black);
+    font-size: 1.4rem;
+}
+.skill-list{
+    display: flex;
+    flex-wrap: wrap ;
+    gap:1rem;
+    margin: 1.8rem 0 2.5rem 0;
+}
+p{
+    font-size: 1.1rem;
+}
+.content{
+    width: 100%;
+    max-width: 500px;
+   
+}
+.skill{
+    background: var(--primary-white) ;
+    padding: .4rem  .5rem;
+    border-radius: .5rem ;
+}
+
+
+
+.project-scroller{
+    background: yellowgreen;
+    height: calc(100vh - var(--header-size) - var(--hero-size));
+    overflow: hidden;
+}
+.project{
+    width: 20rem;
+    height: 11rem;
+    background: rgba(0, 0, 0, 0.14);
+  
+}
+.proj-btn{
+    background: var(--primary-blue);
+    color: var(--primary-black);
+    padding: .7rem 1.1rem;
+    border-radius: .5rem; 
+    position: absolute;
+    top: 90%;
+    left: 15%;
+    transform: translate(-50%,  -200%);
+    transition: transform .3 ease-in-out;
+}
+    .project:hover .proj-btn{
+        transform: translate(-50%, -50%) ;
+    }
+    .proj-btn:hover{
+        background: rgb(201, 18, 18) ;
+        transition: transform 100 ease-in-out ;
+    }
+    .project::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+    }
